@@ -1,0 +1,12 @@
+{
+  "name": "return-random-color",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/glalone/return-random-color.git",
+  "author": "glalone <g.hof@ihaprojects.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "randomcolor": "^0.6.2"
+  }
+}
