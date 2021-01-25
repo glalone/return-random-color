@@ -1,11 +1,37 @@
-// const emoji = require('node-emoji');
+const randomColor = require('randomcolor'); // feed package randomcolor into constant variable
+const chalk = require('chalk'); // feed package randomcolor into constant variable
 
-// const emojiCode = process.argv[2];
+// I used 'color.js' for the code, i switched it to index.js
+const colorDisplay = randomColor({
+  luminosity: process.argv[3],
+  hue: process.argv[2],
+});
 
-// const emojiExists = emoji.hasEmoji(emojiCode);
+// old code changed this into a one Unique console.log() making use of template literals.
+// console.log(chalk.hex(colorDisplay)('###############################'));
+// console.log(chalk.hex(colorDisplay)('###############################'));
+// console.log(chalk.hex(colorDisplay)('###############################'));
+// console.log(chalk.hex(colorDisplay)('#####                     #####'));
+// console.log(
+//   chalk.hex(colorDisplay)('#####       ' + colorDisplay + '       #####'),
+// );
 
-// if (emojiExists === true) {
-//   console.log(emoji.get(emojiCode));
-// } else {
-//   console.log('emoji nat found');
-// }
+// console.log(chalk.hex(colorDisplay)('#####                     #####'));
+// console.log(chalk.hex(colorDisplay)('###############################'));
+// console.log(chalk.hex(colorDisplay)('###############################'));
+// console.log(chalk.hex(colorDisplay)('###############################'));
+
+// new code with one Unique console.log()
+console.log(
+  chalk.hex(colorDisplay)(`
+###############################
+###############################
+###############################
+#####                     #####
+#####       ${colorDisplay}       #####
+#####                     #####
+###############################
+###############################
+###############################
+`),
+);
