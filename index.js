@@ -7,20 +7,6 @@ const colorDisplay = randomColor({
   hue: process.argv[2],
 });
 
-// old code changed this into a one Unique console.log() making use of template literals.
-// console.log(chalk.hex(colorDisplay)('###############################'));
-// console.log(chalk.hex(colorDisplay)('###############################'));
-// console.log(chalk.hex(colorDisplay)('###############################'));
-// console.log(chalk.hex(colorDisplay)('#####                     #####'));
-// console.log(
-//   chalk.hex(colorDisplay)('#####       ' + colorDisplay + '       #####'),
-// );
-
-// console.log(chalk.hex(colorDisplay)('#####                     #####'));
-// console.log(chalk.hex(colorDisplay)('###############################'));
-// console.log(chalk.hex(colorDisplay)('###############################'));
-// console.log(chalk.hex(colorDisplay)('###############################'));
-
 // new code with one Unique console.log()
 console.log(
   chalk.hex(colorDisplay)(`
